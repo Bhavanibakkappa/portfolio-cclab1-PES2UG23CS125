@@ -1,0 +1,102 @@
+/* RESET */
+* { box-sizing: border-box; }
+body, h1, h2, h3, h4, p { margin: 0; padding: 0; }
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #f5f7ff;
+	color: #333;
+}
+
+/* COMMON */
+.wrapper {
+	padding: 20px;
+}
+
+.primary { background: #d6e4ff; }
+.secondary { background: #ffffff; }
+
+h1 { font-size: 2.4rem; }
+h2 { font-size: 1.8rem; margin-bottom: 15px; }
+h3 { margin-bottom: 10px; }
+p { margin-bottom: 10px; line-height: 1.6; }
+
+a {
+	color: #4a6cf7;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.centered { text-align: center; }
+
+/* HEADER */
+.header-flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+#mainnav ul {
+	display: flex;
+	gap: 20px;
+	margin-top: 15px;
+	list-style: none;
+}
+
+/* WORK */
+#work {
+	background: #fff;
+	border-radius: 20px;
+	margin: 20px;
+}
+
+.featured img,
+.projects img {
+	border-radius: 12px;
+}
+
+.projects {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.projects article {
+	background: #f5f7ff;
+	padding: 15px;
+	border-radius: 15px;
+	text-align: center;
+}
+
+/* ABOUT */
+.about-flex {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.profile-photo img {
+	border-radius: 50%;
+	margin: auto;
+}
+
+/* SOCIAL */
+.social a {
+	font-size: 1.6rem;
+	margin-right: 10px;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+	.header-flex {
+		flex-direction: row;
+		justify-content: space-between;
+		text-align: left;
+	}
+
+	.about-flex {
+		flex-direction: row;
+	}
+}
